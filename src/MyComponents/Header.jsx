@@ -89,7 +89,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#project-area"
+                  href="#projects"
                   className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 "
                 >
                   Projects

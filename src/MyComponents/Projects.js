@@ -2,7 +2,7 @@ import React from "react";
 
 export const Projects = () => {
   return (
-    <section id="projects h-screen w-screen">
+    <section id="projects">
       <h3 class="text-4xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
         <a className="underline-effect" href="#about">
           <span className="text-gray-200">Projects </span>
