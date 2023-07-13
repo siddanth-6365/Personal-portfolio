@@ -19,7 +19,7 @@ export const Projects = () => {
           </div>
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-2xl lg:text-2xl mb-5">
-              NETFLIX-CLONE
+            <a  href="https://bquh2t-3000.csb.app/"  target="_blank"  class="project-tile"   >  NETFLIX-CLONE </a>
             </h1>
             <p className="text-gray-400">
               {" "}
@@ -64,12 +64,16 @@ export const Projects = () => {
               target="_blank"
               class="project-tile"
             >
-              <img src={require("./assets/pimg3.png")} alt="netlix" />
+              <img src={require("./assets/proimg3.png")} alt="netlix" />
             </a>
           </div>
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-xl lg:text-2xl mb-5">
-              Airline-reservation ( backend project )
+            <a
+              href="https://github.com/siddanth-6365/Airline_project_node_Course"
+              target="_blank"
+              class="project-tile"
+            >  Airline-reservation (backend project) </a>
             </h1>
             <p className="text-gray-400">
               {" "}
@@ -123,7 +127,11 @@ export const Projects = () => {
 
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-2xl lg:text-2xl mb-5">
-             2do-list
+            <a
+            href="https://siddanth-6365.github.io/Todo-List_react/"
+              target="_blank"
+              class="project-tile"
+            > 2do-list </a>
             </h1>
             <p className="text-gray-400">
               {" "}

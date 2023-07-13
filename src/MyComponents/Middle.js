@@ -18,15 +18,15 @@ const Middle = () => {
               <div className=" flex flex-col justify-start items-center">
 
                 <h1 class="heading-span  text-2xl font-bold mb-4 text-center">
-                  <span class="nameclass  ">HEY, I'M SIDDANTH REDDY</span>
+                  <span class="nameclass  ">{" HEY, I'M Siddanth Reddy "} </span>
                 </h1>
 
                 <h2 class=" text-xl font-bold mb-4 text-center">
-                  <span class="nameclass-2  ">An Full-Stack Web Developer</span>
+                  <span class="nameclass-2  ">{"<An Full-Stack Web Developer/>"} </span>
                 </h2>
-                <p class="text-lg max-w-[500px] font-mono text-blue-500 mb-6 text-center mt-3">
-                I have been actively learning and developing my skills
-                  in web development for the past few months
+                <p class="text-lg italic max-w-[500px] font-mono text-blue-500 mb-6 text-center mt-3">
+                " I have been actively learning and developing my skills
+                  in web development for the past few months "
                 </p>
                 <div class="mt-5">
                   <button class="pushable">

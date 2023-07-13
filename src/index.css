@@ -117,12 +117,12 @@ code {
   transform: translateY(-2px);
 }
 
-/* skillslist.js buttons css */
+/* skillslist.js buttons css
 .skills-btn {
   width: 100px;
   height: 40px;
   transition: width 0.3s, height 0.3s;
-}
+} */
 
 /* If the browser window is 600px or smaller, */
 
@@ -137,6 +137,7 @@ code {
   }
   .nameclass-2 {
     font-size: large;
+    margin-left: -3px;
   }
 
   .logo-name {
@@ -146,6 +147,29 @@ code {
     animation: animate 5s ease-in-out infinite 3s;
     height: 500px;
     width: 500px;
+  }
+
+  nav .pushable {
+    position: relative;
+    left: -5%;
+    width: 55px;
+    height: 40px;
+    background: hsl(234, 100%, 27%);
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+
+  nav .front {
+    display: block;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    background: hsl(229, 100%, 55%);
+    color: white;
+    transform: translateY(-6px);
   }
 
   .pushable {
@@ -173,11 +197,7 @@ code {
     transform: translateY(-2px);
   }
 
-  .skills-btn {
-    width: 70px;
-    font-size: x-small;
-    height: 40px;
-  }
+  
   .middle {
     height: 100vh;
     display: inline;
@@ -222,6 +242,7 @@ code {
     margin-left: -10px;
     margin-top: 2px;
   }
+
   .scroll-downs {
    display: none;
   }

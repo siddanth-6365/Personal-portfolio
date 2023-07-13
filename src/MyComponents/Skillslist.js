@@ -47,8 +47,9 @@ const Skillslist = () => {
           </li>
           <li>
             <i class="fa-brands fa-node" ></i>
-            <p className="text-gray-500" >Node js</p>
+            <p className="text-gray-500" >Node js(Express JS)</p>
           </li>
+         
           <li>
             <i class="fa-brands fa-react" ></i>
 
@@ -56,13 +57,14 @@ const Skillslist = () => {
           </li>
           <li>
             <i class="fas fa-database" ></i>
-            <p className="text-gray-500" >MySql</p>
+            <p className="text-gray-500" >MySql and MongoDb</p>
           </li>
           <li>
             <i class="fab fa-github" ></i>
 
             <p className="text-gray-500" >Git/GitHub</p>
           </li>
+         
         </div>
 
         <br></br>
