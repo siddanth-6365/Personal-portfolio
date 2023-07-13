@@ -1,0 +1,529 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.nameclass {
+  font-size: xxx-large;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nameclass-2 {
+  font-size: xx-large;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.namebelow {
+  font-size: x-large;
+}
+
+.underline-effect {
+  color: gray;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+}
+.underline-effect:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  bottom: -7px;
+  /* left: 50%; */
+  position: absolute;
+  background: gray;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./MyComponents/assets/bgportfolio1.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.middle {
+  /* width: 100;
+  height: 100vh;
+   */
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.intro-div {
+  position: relative;
+  top: 10%;
+}
+
+.img-div-1 {
+  animation: animate 5s ease-in-out infinite;
+}
+
+.logo-name {
+  font-family: monospace;
+  line-height: normal;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 3d blue button css */
+.pushable {
+  background: hsl(234, 100%, 27%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(229, 100%, 55%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+/* skillslist.js buttons css */
+.skills-btn {
+  width: 100px;
+  height: 40px;
+  transition: width 0.3s, height 0.3s;
+}
+
+/* If the browser window is 600px or smaller, */
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .nameclass {
+    font-size: x-large;
+  }
+  .nameclass-2 {
+    font-size: large;
+  }
+
+  .logo-name {
+    font-size: 15px;
+  }
+  .side-img {
+    animation: animate 5s ease-in-out infinite 3s;
+    height: 500px;
+    width: 500px;
+  }
+
+  .pushable {
+    position: relative;
+    left: -5%;
+    width: 75px;
+    height: 40px;
+    background: hsl(234, 100%, 27%);
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    background: hsl(229, 100%, 55%);
+    color: white;
+    transform: translateY(-6px);
+  }
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+
+  .skills-btn {
+    width: 70px;
+    font-size: x-small;
+    height: 40px;
+  }
+  .middle {
+    height: 100vh;
+    display: inline;
+  }
+
+  .middle-inside {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-div {
+    position: relative;
+    top: -50px;
+    width: 100%;
+  }
+  .img-div-1 {
+    order: -1;
+    animation: animate 5s ease-in-out infinite;
+    margin-top: 8%;
+    margin-right: 10%;
+    height: 300px;
+    width: 250px;
+  }
+  .social-div .card1 {
+    width: 40px;
+    height: 40px;
+  }
+  .down .card3 {
+    width: 40px;
+    height: 40px;
+  }
+  .down .card4 {
+    width: 40px;
+    height: 40px;
+  }
+  .social-div .instagram {
+    margin-left: 4%;
+  }
+  .social-div .github {
+    margin-left: 4%;
+  }
+  .social-div .linkedin {
+    margin-left: -10px;
+    margin-top: 2px;
+  }
+  .scroll-downs {
+   display: none;
+  }
+
+  #message-form svg {
+    height: 100%;
+    width: 100%;
+  }
+  .skills-divlist li p {
+    font-size: 13px;
+  }
+
+  .header-items ul {
+    background-color: #15202b;
+  }
+.pros{
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  width: 500px;
+}
+
+.pros h1 {
+  font-size: larger;
+}
+.pros span {
+  font-size: larger;
+}
+
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Social icon css */
+
+.social-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid #cc39a4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-left: 13px;
+  fill: #cc39a4;
+}
+
+.card3 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+  fill: white;
+}
+
+.github {
+  margin-left: 13px;
+}
+
+.card4 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid #0070ef;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: 1px;
+  fill: #0070ef;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.card2:hover .twitter {
+  fill: black;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+
+  background-color: white;
+}
+
+.card3:hover .github {
+  fill: black;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0070ef;
+}
+
+.card4:hover .linkedin {
+  fill: black;
+}
+
+/**/
+
+.project-content {
+  position: relative;
+  bottom: 200px;
+}
+
+.project-content-2 {
+  position: relative;
+  bottom: 500px;
+  left: 100px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scroll-downs {
+  margin: auto;
+  margin-top: 5%;
+  width: 34px;
+  height: 50px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.pro1-img {
+  scale: 1.5;
+}
+
+.pro2-img {
+  scale: 1.1;
+}
+
+.imgpro1 {
+  /* zoom: 2; */
+  scale: 1.6;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-brands,
+.fab,
+.fas {
+  font-size: 5rem;
+  color: #868e96;
+}
+
+.fa-brands:hover,
+.fab:hover,
+.fas:hover {
+  color: #0070ef;
+  text-shadow: 0 0 40px #0070ef;
+}
+
+
+#message-form svg {
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  animation: animate 5s ease-in-out infinite 3s;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+ {
+  /*project section css*/
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  margin-top: 0;
+  color: white;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 910px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  margin: 10px;
+  max-width: 340px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile img {
+  width: 400px;
+  height: 300px;
+}
