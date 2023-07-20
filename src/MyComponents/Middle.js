@@ -1,32 +1,36 @@
 import React from "react";
+import Header from "./Header";
 
 const imagestyle = {
-    "height":"450px",
-    "width":"450px",
-    "transform": "rotate(23deg)",
-"marginTop":"30px",
-}
+  height: "450px",
+  width: "450px",
+  transform: "rotate(23deg)",
+  marginTop: "30px",
+};
 
 const Middle = () => {
   return (
     <>
-      <div class="middle  grid w-screen  mt-8  ">
+      <section class="middle grid w-screen    " id="middle">
+       
         <div className="middle-inside flex flex-col w-screen md:flex-row sm:flex-row">
-
           <div class="intro-div flex w-1/2 items-center p-5  justify-center">
             <div class=" w-2/3 p-10 m-4    ">
               <div className=" flex flex-col justify-start items-center">
-
                 <h1 class="heading-span  text-2xl font-bold mb-4 text-center">
-                  <span class="nameclass  ">{" HEY, I'M Siddanth Reddy "} </span>
+                  <span class="nameclass  ">
+                    {" HEY, I'M Siddanth Reddy "}{" "}
+                  </span>
                 </h1>
 
                 <h2 class=" text-xl font-bold mb-4 text-center">
-                  <span class="nameclass-2  ">{"<An Full-Stack Web Developer/>"} </span>
+                  <span class="nameclass-2  ">
+                    {"<An Full-Stack Web Developer/>"}{" "}
+                  </span>
                 </h2>
                 <p class="text-lg italic max-w-[500px] font-mono text-blue-500 mb-6 text-center mt-3">
-                " I have been actively learning and developing my skills
-                  in web development for the past few months "
+                  " I have been actively learning and developing my skills in
+                  web development for the past few months "
                 </p>
                 <div class="mt-5">
                   <button class="pushable">
@@ -37,9 +41,8 @@ const Middle = () => {
                 </div>
 
                 <div class="social-div mt-8">
-            
                   <div class="down">
-                  <a
+                    <a
                       href="https://www.instagram.com/siddanth.here/"
                       target="_blank"
                     >
@@ -114,7 +117,10 @@ const Middle = () => {
           </div>
 
           <div class="img-div-1 w-1/2 flex justify-center items-center sm:order-first">
-            <div class="svg-div transision-all ease-in-out delay-150 " style={imagestyle}>
+            <div
+              class="svg-div transision-all ease-in-out delay-150 "
+              style={imagestyle}
+            >
               <img
                 src={require("./assets/moonimg.png")}
                 alt="web designer"
@@ -129,7 +135,7 @@ const Middle = () => {
             <div class="scroller"></div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

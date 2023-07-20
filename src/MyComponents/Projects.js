@@ -10,20 +10,32 @@ export const Projects = () => {
       </h3>
 
       <div class="projects-container ">
-        
         <div className="pros lg:flex  items-center ">
           <div className="w-1/2 ">
-            <a  href="https://bquh2t-3000.csb.app/"  target="_blank"  class="project-tile"   >
-              <img src={require("./assets/pimg1.png")} alt="netlix" />
+            <a
+              href="https://bquh2t-3000.csb.app/"
+              target="_blank"
+              class="project-tile"
+            >
+              <img src={require("./assets/pimg1.png")} alt="netlix" style={{border:"2px solid gray"}} />
             </a>
           </div>
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-2xl lg:text-2xl mb-5">
-            <a  href="https://bquh2t-3000.csb.app/"  target="_blank"  class="project-tile"   >  NETFLIX-CLONE </a>
+              <a
+                href="https://bquh2t-3000.csb.app/"
+                target="_blank"
+                class="project-tile"
+              >
+                {" "}
+                NETFLIX-CLONE{" "}
+              </a>
             </h1>
             <p className="text-gray-400">
               {" "}
-              <span className="text-white">Stack :</span> React js , Tailwind CSS{" "} </p>
+              <span className="text-white">Stack :</span> React js , Tailwind
+              CSS{" "}
+            </p>
             <p className="text-gray-400 mt-4 sm:text-sm">
               {" "}
               This website was built with React JS framework, styled using
@@ -64,29 +76,32 @@ export const Projects = () => {
               target="_blank"
               class="project-tile"
             >
-              <img src={require("./assets/proimg3.png")} alt="netlix" />
+              <img src={require("./assets/proimg3.png")} alt="netlix" style={{border:"3px solid gray"}} />
             </a>
           </div>
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-xl lg:text-2xl mb-5">
-            <a
-              href="https://github.com/siddanth-6365/Airline_project_node_Course"
-              target="_blank"
-              class="project-tile"
-            >  Airline-reservation (backend project) </a>
+              <a
+                href="https://github.com/siddanth-6365/Airline_project_node_Course"
+                target="_blank"
+                class="project-tile"
+              >
+                {" "}
+                Airline-reservation (backend project){" "}
+              </a>
             </h1>
             <p className="text-gray-400">
               {" "}
-              <span className="text-white">Stack :</span> ExpressJs, MySQL, REST Api and npm-packages
-              {" "}
+              <span className="text-white">Stack :</span> ExpressJs, MySQL, REST
+              Api and npm-packages{" "}
             </p>
             <p className="text-gray-400 mt-4">
               {" "}
-              Developed backend microservices-based project including
-                      four services: Flights,Booking,Authentication,Notification using: ExpressJs, MySQL, REST
-                      APIs , rabbitmq and npm packages{"  "}
-                      (rate limiter,proxy,cron jobs,JWT) also Solved common
-                      booking problems
+              Developed backend microservices-based project including four
+              services: Flights,Booking,Authentication,Notification using:
+              ExpressJs, MySQL, REST APIs , rabbitmq and npm packages{"  "}
+              (rate limiter,proxy,cron jobs,JWT) also Solved common booking
+              problems
             </p>
             <p className="mt-3">
               <a
@@ -117,38 +132,36 @@ export const Projects = () => {
         <div className="pros lg:flex sm:flex sm:flex-col items-center ">
           <div className="w-1/2 ">
             <a
-            href="https://siddanth-6365.github.io/Todo-List_react/"
+              href="https://34jqzd-3000.csb.app/"
               target="_blank"
               class="project-tile"
             >
-              <img src={require("./assets/pimg2.png")} alt="netlix" />
+              <img src={require("./assets/pimg4.png")} alt="img" style={{border:"2px solid gray"}} />
             </a>
           </div>
 
           <div className="w-1/2 flex flex-col items-center  p-2">
             <h1 class="font-bold text-blue-500 underline uppercase text-2xl lg:text-2xl mb-5">
-            <a
-            href="https://siddanth-6365.github.io/Todo-List_react/"
-              target="_blank"
-              class="project-tile"
-            > 2do-list </a>
+              <a
+                href="https://34jqzd-3000.csb.app/"
+                target="_blank"
+                class="project-tile"
+              >
+                {" "}
+                Csv-2-Invoice{" "}
+              </a>
             </h1>
             <p className="text-gray-400">
               {" "}
-              <span className="text-white">Stack :</span> React js , Bootstrap
-              {" "}
+              <span className="text-white">Stack :</span> React js,Node Js,Express JS,MongoDb atlas{" "}
             </p>
             <p className="text-gray-400 mt-4">
               {" "}
-              This is a basic Todo-list website using frameworks like React js ,bootstrap and localStorage.In this project in
-                      react js i have used JavaScript XML (JSX) ,for styling i
-                      used bootstrap a CSS framework and for storage i have used
-                      a localStorage concept in js which allow you to store and
-                      access data without expiration.
+              I created Csv_to_Invoice, a website allows shopkeepers to easily upload CSV files containing order details and view a comprehensive list of all orders on a user-friendly dashboard. The website was built using MERN stack along with npm packages like multer for file uploading,cors,and axios.This is just an basic version, lot more to develop it in the future.
             </p>
             <p className="mt-3">
               <a
-                href="https://github.com/siddanth-6365/netflix_clone_basic"
+                href="https://github.com/siddanth-6365/csv_to_invoice"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="transition-transform transform hover:scale-125"
@@ -171,7 +184,6 @@ export const Projects = () => {
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

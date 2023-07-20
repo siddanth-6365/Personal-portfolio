@@ -23,7 +23,7 @@ const Form = (props) => {
 
     return (
         <>
-            <div class="flex flex-col md:flex-row" id="message-form">
+            <section class="flex flex-col md:flex-row" id="message-form">
                 <div class="w-full mt-4 md:w-1/2 h-1/2">
                     <svg
                         width="653"
@@ -701,9 +701,7 @@ const Form = (props) => {
                         </div>
                     </section>
                 </div>
-            </div>
-
-
+            </section>
 
             <div className="text-gray-300 mb-3   ">
                 <div className="flex items-end justify-center">

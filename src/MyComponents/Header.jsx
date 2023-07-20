@@ -2,13 +2,13 @@ import React from "react";
 import "flowbite";
 import { useState, useEffect } from "react";
 
-const Header = () => {
- 
+const Header = ({ref}) => {
 
+ 
   return (
     <>
     
-      <nav id="navbar" className="m-4 " >
+      <div id="navbar" className=" p-4 m-2 "  >
         <div className=" backdrop-blur-3xl text-black shadow-lg flex flex-wrap items-center justify-between">
           <div>
             <a href="#" className="flex items-center">
@@ -66,8 +66,8 @@ const Header = () => {
           </div>
 
           <div
-            className="header-items items-center bg-black justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
+            className=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+           
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
               <li>
@@ -106,7 +106,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 };

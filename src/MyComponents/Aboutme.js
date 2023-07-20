@@ -25,7 +25,7 @@ const AboutSection = () => {
   return (
     <>
 
-      <div class="antialiased" id="about-div" >
+      <section class="aboutmesection" id="about-div" >
         <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
           <div  class="max-w-2xl   mx-auto text-center">
             <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
@@ -95,7 +95,7 @@ const AboutSection = () => {
           </div>
         </div>
 <Skillslist/>
-      </div>
+      </section>
     
 
 
