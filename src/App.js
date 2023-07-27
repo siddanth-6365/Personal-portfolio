@@ -2,6 +2,7 @@ import Header from "./MyComponents/Header";
 import Middle from "./MyComponents/Middle";
 import Aboutme from "./MyComponents/Aboutme";
 import { Projects } from "./MyComponents/Projects";
+import { ProjectTimeline } from "./MyComponents/NewProject";
 
 
 import "./index.css";
@@ -16,7 +17,8 @@ function App() {
       <Header  />
       <Middle />
       <Aboutme />
-      <Projects />
+      
+      <ProjectTimeline />
       <Form />
      
     </>

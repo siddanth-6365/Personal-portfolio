@@ -550,3 +550,111 @@ section p {
 }
 
 
+.contentwrapper {
+  clear: both;
+  padding: 0 2%;
+  box-sizing: border-box;
+  width: 94%;
+  max-width: 1280px;
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+:root {
+  --trickyScale: 0.5;
+}
+
+.screen-image {
+  transform: perspective(3200px) rotateX(41.8deg) rotateY(48.5deg) rotateZ(-23.2deg) translateX(135px) translateY(190px) scale(1.348);
+  z-index: 2;
+}
+
+
+/* deactivate animation on iOS for z-sorting sorting problems */
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */
+  .screen-image {
+      transition: transform 600ms ease-in-out, box-shadow 600ms ease-in-out;
+      transition-delay: 200ms;
+  }
+
+  .screen-frame {
+      transition: opacity 600ms ease-in-out;
+      transition-delay: 200ms;
+  }
+}
+
+/* you may want to change the position of the hovered image, it was optimized for my need (1280px centered virwport, flipped screen in right half of screen) */
+.screen-wrapper:hover .screen-image {
+  transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(560px) translateY(220px) scale(2.5);
+  cursor: pointer;
+  box-shadow: 0 0 20px 20px rgb(255, 255, 255);
+}
+
+.screen-wrapper:hover .screen-frame {
+  opacity: 0;
+}
+
+.screen-wrapper img, .screen-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screen-wrapper {
+  transform: translateX(-12px) scale(var(--trickyScale));
+  transform-origin: top left;
+  clear: both;
+}
+
+/* all media queries are made for my need, you may want to change them */
+@media screen and (max-width: 1380px) {
+  .screen-wrapper {
+      min-height: 50vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .screen-wrapper {
+      min-height: 85vw;
+  }
+}
+
+@media screen and (min-width: 1381px) {
+  .screen-wrapper {
+      min-height: 670px;
+  }
+}
+
+
+@media (min-width: 769px) {
+  /* start flipped screens (no flipping on small screens)  */
+  .screen-wrapper.flip .screen-image {
+      transform: perspective(3100px) rotateX(44.2deg) rotateY(-51.0deg) rotateZ(26.4deg) translateX(292px) translateY(246px) scale(1.165);
+  }
+
+  .screen-wrapper.flip:hover .screen-image {
+      transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(-340px) translateY(220px) scale(2.5);
+      cursor: pointer;
+  }
+
+  .screen-wrapper.flip .screen-frame {
+      transform: scaleX(-1);
+  }
+
+  /* end flipped screens  */
+}
+
+@media (max-width: 768px) {
+  .screen-wrapper:hover .screen-image {
+      transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(15.5%) translateY(220px) scale(1.53) !important;
+  }
+
+  /* centered */
+  .screen-wrapper {
+      left: 50%;
+      margin-left: -40vw;
+  }
+}
