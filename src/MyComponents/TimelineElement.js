@@ -22,7 +22,7 @@ export const TimelineElement = ({
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: " rgba(120, 120, 120, 0.5)" }}
+      contentStyle={{ background: " rgba(120, 120, 120, 0.5)",color:"white" }}
       contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
       date={title}
       iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -42,7 +42,7 @@ export const TimelineElement = ({
         />
       </a>
 
-      <div className="mt-4 flex gap-2">
+      <div className="mt-4  flex gap-2">
         <a href={projectlinks[0]} target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export const TimelineElement = ({
       <div className="flex flex-wrap gap-4 mt-4  font-medium">
         {stackArray.map((s) => {
           return (
-            <button className="p-2 text-sm font-medium bg-gray-300  rounded-full ">
+            <button className="p-2 text-sm font-medium bg-gray-300   rounded-full " style={{color:"black"}}>
               {s}
             </button>
           );
