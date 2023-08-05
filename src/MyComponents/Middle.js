@@ -53,7 +53,7 @@ const Middle = () => {
                 
                   <h1 class="heading-span  text-2xl font-bold mb-4 text-center">
                     <span class="nameclass  ">
-                      {" HEY, I'M Siddanth Reddy "}{" "}
+                      {" HEY, I'M Siddanth"}{" "}
                     </span>
                   </h1>
 
