@@ -1,9 +1,8 @@
 import React from "react";
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
-
 import Skillslist from "./Skillslist";
-
+import { motion } from "framer-motion";
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
@@ -24,15 +23,17 @@ const fixediconstyle = {
 const AboutSection = () => {
   return (
     <>
-
+ <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <section class="aboutmesection" id="about-div" >
         <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24"  >
           <div  class="max-w-2xl   mx-auto text-center">
+        
             <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
               <a className="underline-effect" href="#about" >
                 <span className="text-gray-300" >About Me </span>
                 </a>
             </h1>
+           
           </div>
 
           <div class="grid grid-cols-1 mt-8 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -97,7 +98,7 @@ const AboutSection = () => {
 <Skillslist/>
       </section>
     
-
+      </motion.div>
 
     </>
   );

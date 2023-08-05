@@ -5,6 +5,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.progress-bar-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
 .nameclass {
   font-size: xxx-large;
   background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
@@ -79,12 +91,12 @@ code {
 
 .intro-div {
   position: relative;
-  top: 10%;
+  /* top: 10%; */
 }
 
-.img-div-1 {
+/* .img-div-1 {
   animation: animate 5s ease-in-out infinite;
-}
+} */
 
 .logo-name {
   font-family: monospace;
@@ -133,10 +145,10 @@ code {
   }
 
   .nameclass {
-    font-size: x-large;
+    font-size: xx-large;
   }
   .nameclass-2 {
-    font-size: large;
+    font-size: x-large;
     margin-left: -3px;
   }
 
@@ -209,17 +221,17 @@ code {
   }
   .intro-div {
     position: relative;
-    top: -50px;
+    top: -30px;
     width: 100%;
   }
   .img-div-1 {
     order: -1;
-    animation: animate 5s ease-in-out infinite;
-    margin-top: 8%;
-    margin-right: 10%;
     height: 300px;
-    width: 250px;
+    width: 300px;
+   
   }
+
+
   .social-div .card1 {
     width: 40px;
     height: 40px;
@@ -244,7 +256,13 @@ code {
   }
 
   .scroll-downs {
-   display: none;
+   /* display: none; */
+   position: relative;
+width: 20px;
+height: 20px;
+  }
+  .hireme-btn{
+    display: none;
   }
 
   #message-form svg {
@@ -413,7 +431,7 @@ code {
 
 .scroll-downs {
   margin: auto;
-  margin-top: 5%;
+  margin-top: -5%;
   width: 34px;
   height: 50px;
 }
