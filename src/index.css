@@ -7,15 +7,6 @@ html {
 }
 
 
-.progress-bar-up {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
-}
 
 .nameclass {
   font-size: xxx-large;
@@ -59,6 +50,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./MyComponents/assets/bgportfolio1.jpeg");
   background-size: 100%;

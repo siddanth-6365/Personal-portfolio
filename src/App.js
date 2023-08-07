@@ -22,6 +22,7 @@ function App() {
 
       <Header  />
       <Middle />
+      
       <Aboutme />
       <ProjectTimeline />
       <Form />
