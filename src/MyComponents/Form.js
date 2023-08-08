@@ -1,8 +1,32 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { motion,useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const svgVariant= {
+    visible: { x: 0, opacity: 1, transition: { duration: 1.5 } },
+    hidden: { opacity: 0, x: -30 }, // Move from above the screen
+  }
+  const formVariant= {
+    visible: { x: 0, opacity: 1, transition: { duration: 1.5 } },
+    hidden: { opacity: 0, x: 10 }, // Move from above the screen
+  
+  }
 
 const Form = (props) => {
+  
+    const controls = useAnimation();
+
+    const [ref, inView] = useInView();
+    
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      } else {
+        controls.start("hidden");
+      }
+    }, [controls, inView]);
 
     const form = useRef();
 
@@ -23,8 +47,15 @@ const Form = (props) => {
 
     return (
         <>
-            <section class="flex flex-col md:flex-row" id="message-form">
-                <div class="w-full mt-4 md:w-1/2 h-1/2">
+            <motion.section class="flex flex-col md:flex-row" id="message-form"
+            ref={ref}>
+
+                <motion.div class="w-full mt-4 md:w-1/2 h-1/2"
+                   ref={ref}
+                   animate={controls}
+                  initial="hidden"
+                   variants={svgVariant}
+                >
                     <svg
                         width="653"
                         height="722"
@@ -663,8 +694,14 @@ const Form = (props) => {
                             </g>
                         </g>
                     </svg>
-                </div>
-                <div class="w-full md:w-1/2 h-1/2 grid justify-center p-2">
+                </motion.div>
+
+                <motion.div class="w-full md:w-1/2 h-1/2 grid justify-center p-2"
+                   ref={ref}
+                   animate={controls}
+                  initial="hidden"
+                   variants={formVariant}
+                >
                     <section class=" -900">
                         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                             <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-center text-blue-700  ">Send me a message!</h2>
@@ -700,8 +737,8 @@ const Form = (props) => {
                             </form>
                         </div>
                     </section>
-                </div>
-            </section>
+                </motion.div>
+            </motion.section>
 
             <div className="text-gray-300 mb-3   ">
                 <div className="flex items-end justify-center">

@@ -20,12 +20,12 @@ const fixediconstyle = {
 };
 
 const aboutmevariant = {
-  visible: { y: 0, opacity: 1, transition: { duration: 0.7 } },
+  visible: { y: 0, opacity: 1, transition: { duration: 1.3 } },
   hidden: { opacity: 0, y: -100 }, // Move from above the screen
 };
 
 const skillsvariant = {
-  visible: { y: 20, opacity: 1, transition: { duration: 0.7 } },
+  visible: { y: 20, opacity: 1, transition: { duration: 1.3 } },
   hidden: { opacity: 0, y: 100 }, // Move from below the screen
 };
 
@@ -49,7 +49,7 @@ useEffect(() => {
   return (
     <>
       <div>
-        <motion.section class="aboutmesection" id="about-div">
+        <motion.section class="aboutmesection" id="about-div" ref={ref}>
         
           <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24">
             <div class="max-w-2xl   mx-auto text-center">
@@ -63,7 +63,7 @@ useEffect(() => {
 
             <motion.div
               class="grid grid-cols-1 mt-8 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
-              ref={ref}
+              // ref={ref}
          animate={controls}
  initial="hidden"
          variants={aboutmevariant}
@@ -128,7 +128,7 @@ useEffect(() => {
           </div>
 
 <motion.div
- ref={ref}
+//  ref={ref}
  animate={controls}
 initial="hidden"
  variants={skillsvariant}

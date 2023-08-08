@@ -135,6 +135,9 @@ code {
     background-size: cover;
     background-attachment: fixed;
   }
+  .Resume-btn{
+    display: none;
+  }
 
   .nameclass {
     font-size: xx-large;
