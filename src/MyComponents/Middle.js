@@ -78,21 +78,20 @@ const Middle = () => {
             <div class=" w-2/3 p-10 m-4    ">
               <div className=" flex flex-col justify-start items-center">
                 <motion.h1
-                  class="heading-span p-4 border-dashed border-2 border-blue-300 text-2xl font-bold mb-4 text-center hover:cursor-move"
-                  drag
-                  dragConstraints={{
-                    top: -50,
-                    left: -50,
-                    right: 50,
-                    bottom: 50,
-                  }}
-                  dragElastic={0.3}
-                  whileHover={{
-                    scale:1.1,
-                    cursor:"move"
-                  }}
+                  class="heading-span p-4  text-2xl font-bold mb-4 text-center hover:cursor-move"
+                  // drag
+                  // dragConstraints={{
+                  //   top: -50,
+                  //   left: -50,
+                  //   right: 50,
+                  //   bottom: 50,
+                  // }}
+                  // dragElastic={0.3}
+                  // whileHover={{
+                  //   scale:1.1,
+                  //   cursor:"move"
+                  // }}
                  
-                  
                 >
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
