@@ -1,10 +1,9 @@
 import {
   VerticalTimeline,
-  VerticalTimelineElement,
+  
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 import { TimelineElement } from "./TimelineElement";
@@ -13,17 +12,17 @@ export const ProjectTimeline = () => {
   const handleDragStart = (e) => e.preventDefault();
 
   const items1 = [
-    <img
+    <img alt=""
       src={require("./assets/p1img1.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
-    <img
+    <img alt=""
       src={require("./assets/p1img2.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
-    <img
+    <img alt=""
       src={require("./assets/p1img3.png")}
       onDragStart={handleDragStart}
       role="presentation"
@@ -31,36 +30,36 @@ export const ProjectTimeline = () => {
   ];
 
   const items2 = [
-    <img
+    <img alt=""
       src={require("./assets/p2img1.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
-    <img
+    <img alt=""
       src={require("./assets/p2img2.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
-    <img
+    <img alt=""
       src={require("./assets/p2img4.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
   ];
 
-  const items3 = [
-    <img  src={require("./assets/p3img1.png")}  onDragStart={handleDragStart}  role="presentation" />,
-    <img  src={require("./assets/p3img2.png")}  onDragStart={handleDragStart}  role="presentation" />,
+  const items4 = [
+    <img alt=""  src={require("./assets/p3img1.png")}  onDragStart={handleDragStart}  role="presentation" />,
+    <img  alt="" src={require("./assets/p3img2.png")}  onDragStart={handleDragStart}  role="presentation" />,
 
   ];
 
-  const items4 = [
-    <img
+  const items3 = [
+    <img alt=""
       src={require("./assets/p4img1.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
-    <img
+    <img alt=""
       src={require("./assets/p4img2.png")}
       onDragStart={handleDragStart}
       role="presentation"
@@ -69,16 +68,16 @@ export const ProjectTimeline = () => {
 
   const stack1 = ["React", "Tailwind CSS","Firebase"];
   const stack2 = ["React", "NodeJS", "Tailwind CSS", "MongoDB"];
-  const stack3 = ["React", "NodeJS", "Tailwind CSS", "MongoDB"];
-  const stack4 = ["MySql", "NodeJs", "ExpressJs", "REST Api's"];
+  const stack4 = ["React", "NodeJS", "Tailwind CSS", "MongoDB"];
+  const stack3 = ["MySql", "NodeJs", "ExpressJs", "REST Api's"];
 
   const desc1 =
     "This website was built with React JS framework, styled using Tailwind CSS, and Firebase for authentication using email and password. Currently, I am actively working on the project and constantly improving it to enhance its functionality.";
   const desc2 =
     "I created Csv_to_Invoice, a website allows shopkeepers to easily upload CSV files containing order details and view a comprehensive list of all orders on a user-friendly dashboard. The website was built using MERN stack along with npm packages like multer for file uploading,cors,and axios.This is just an basic version, lot more to develop it in the future.";
-  const desc3 =
-    "I am still developing WeekUp using the MERN stack. This application allows users to add modules and tasks under each week.i am working on more features like authentication and share link so that new user can add their own data. This is beta version only.";
   const desc4 =
+    "I am still developing WeekUp using the MERN stack. This application allows users to add modules and tasks under each week.i am working on more features like authentication and share link so that new user can add their own data. This is beta version only.";
+  const desc3 =
     "Developed complete backend microservices-based project including four services: Flights, Booking, Authentication, Notification using: ExpressJs, MySQL, REST APIs , rabbitmq and npm packages (rate limiter,proxy,cron jobs,JWT) also Solved common booking problems";
 
   const projectlink1 = [
@@ -89,11 +88,11 @@ export const ProjectTimeline = () => {
     "https://34jqzd-3000.csb.app/",
     "https://github.com/siddanth-6365/csv_to_invoice",
   ];
-  const projectlink3 = [
+  const projectlink4 = [
     "https://zzkv46-3000.csb.app/",
     "https://github.com/siddanth-6365/WeekUp",
   ];
-  const projectlink4 = [
+  const projectlink3 = [
     "https://github.com/siddanth-6365/Airline_project_node_Course",
     "https://github.com/siddanth-6365/Flight_Booking_Service",
   ];
@@ -110,13 +109,13 @@ export const ProjectTimeline = () => {
 </svg>
 
   ]
-  const iconsvg3 =[
+  const iconsvg4 =[
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
 </svg>
 
   ]
-  const iconsvg4=[
+  const iconsvg3=[
     <svg style={{color: "white"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
         <path d="M.2528 166.9L.0426 67.99C.0208 57.74 9.508 50.11 19.51 52.34L55.07 60.24C65.63 62.58 74.29 70.11 78.09 80.24L95.1 127.1L223.3 165.6L181.8 20.4C178.9 10.18 186.6 .001 197.2 .001H237.3C248.8 .001 259.5 6.236 265.2 16.31L374.2 210.2L481.5 241.8C497.4 246.5 512.2 254.3 525.2 264.7L559.6 292.2C583.7 311.4 577.7 349.5 548.9 360.5C507.7 376.1 462.7 378.5 420.1 367.4L121.7 289.8C110.6 286.9 100.5 281.1 92.4 272.9L9.536 189.4C3.606 183.4 .2707 175.3 .2528 166.9V166.9zM608 448C625.7 448 640 462.3 640 480C640 497.7 625.7 512 608 512H32C14.33 512 0 497.7 0 480C0 462.3 14.33 448 32 448H608zM192 368C192 385.7 177.7 400 160 400C142.3 400 128 385.7 128 368C128 350.3 142.3 336 160 336C177.7 336 192 350.3 192 368zM224 384C224 366.3 238.3 352 256 352C273.7 352 288 366.3 288 384C288 401.7 273.7 416 256 416C238.3 416 224 401.7 224 384z" fill="white"></path></svg>
   ]

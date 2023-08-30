@@ -33,8 +33,7 @@ const Header = ({ref}) => {
               <span class="front">
                 {" "}
                 <a
-                  href="https://drive.google.com/file/d/1ZT0z33X572jO6SoLOtnWmrlMVmvcaVI-/view?usp=sharing"
-                  target="_blank"
+                  href="https://drive.google.com/file/d/1pIX6SIOPW0tyInc-xb3iK56_X_WDo8SC/view"
                 >
                   {" "}
                   Resume{" "}

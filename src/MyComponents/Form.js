@@ -748,7 +748,7 @@ const Form = (props) => {
                 </div>
                 <div className="flex items-end justify-center">
                     <p className='text-xl '>
-                        Crafted with  ❤️   by siddanth
+                        Crafted with🔥by siddanth
 
                     </p>
                 </div>
