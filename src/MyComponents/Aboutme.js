@@ -1,22 +1,16 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import lottie from "lottie-web";
 import { defineElement } from "lord-icon-element";
 import Skillslist from "./Skillslist";
-import { motion,useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
 
-
 const iconstyle = {
   width: "70px",
   height: "80px",
-};
-
-const fixediconstyle = {
-  width: "60px",
-  height: "60px",
 };
 
 const aboutmevariant = {
@@ -29,28 +23,23 @@ const skillsvariant = {
   hidden: { opacity: 0, y: 100 }, // Move from below the screen
 };
 
-
 const AboutSection = () => {
-  
-const controls = useAnimation();
+  const controls = useAnimation();
 
-const [ref, inView] = useInView();
+  const [ref, inView] = useInView();
 
-useEffect(() => {
-  if (inView) {
-    controls.start("visible");
-  } else {
-    controls.start("hidden");
-  }
-}, [controls, inView]);
-
-
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
 
   return (
     <>
       <div>
         <motion.section class="aboutmesection" id="about-div" ref={ref}>
-        
           <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24">
             <div class="max-w-2xl   mx-auto text-center">
               <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
@@ -60,13 +49,12 @@ useEffect(() => {
               </h1>
             </div>
 
-
             <motion.div
               class="grid grid-cols-1 mt-8 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
               // ref={ref}
-         animate={controls}
- initial="hidden"
-         variants={aboutmevariant}
+              animate={controls}
+              initial="hidden"
+              variants={aboutmevariant}
             >
               <div class="space-y-3">
                 <lord-icon
@@ -123,21 +111,16 @@ useEffect(() => {
                 </p>
               </div>
             </motion.div>
-         
-
           </div>
 
-<motion.div
-//  ref={ref}
- animate={controls}
-initial="hidden"
- variants={skillsvariant}
->
-
-<Skillslist />
-
-</motion.div>
-
+          <motion.div
+            //  ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={skillsvariant}
+          >
+            <Skillslist />
+          </motion.div>
         </motion.section>
       </div>
     </>

@@ -6,7 +6,20 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d1950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 113, 212, 0.959);
+  border-radius: 12px;
+}
 
 .nameclass {
   font-size: xxx-large;
@@ -32,7 +45,6 @@ html {
   letter-spacing: 1px;
   display: inline-block;
   position: relative;
-  
 }
 .underline-effect:after {
   background: none repeat scroll 0 0 transparent;
@@ -55,6 +67,7 @@ body {
     url("./MyComponents/assets/bgportfolio1.jpeg");
   /* background-size: 100%; */
   background-attachment: fixed;
+  scrollbar-color: red yellow;
 }
 
 code {
@@ -63,8 +76,7 @@ code {
 }
 
 .middle {
- height: auto
-  
+  height: auto;
 }
 
 @keyframes animate {
@@ -135,7 +147,7 @@ code {
     background-size: cover;
     background-attachment: fixed;
   }
-  .Resume-btn{
+  .Resume-btn {
     display: none;
   }
 
@@ -204,7 +216,6 @@ code {
     transform: translateY(-2px);
   }
 
-  
   .middle {
     height: 100vh;
     display: inline;
@@ -223,9 +234,7 @@ code {
     order: -1;
     height: 300px;
     width: 300px;
-   
   }
-
 
   .social-div .card1 {
     width: 40px;
@@ -251,12 +260,12 @@ code {
   }
 
   .scroll-downs {
-   /* display: none; */
-   position: relative;
-width: 20px;
-height: 20px;
+    /* display: none; */
+    position: relative;
+    width: 20px;
+    height: 20px;
   }
-  .hireme-btn{
+  .hireme-btn {
     display: none;
   }
 
@@ -271,20 +280,19 @@ height: 20px;
   .header-items ul {
     background-color: #15202b;
   }
-.pros{
-  display: flex;
-  flex-direction: column;
-  font-size: medium;
-  width: 500px;
-}
+  .pros {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    width: 500px;
+  }
 
-.pros h1 {
-  font-size: larger;
-}
-.pros span {
-  font-size: larger;
-}
-
+  .pros h1 {
+    font-size: larger;
+  }
+  .pros span {
+    font-size: larger;
+  }
 }
 
 @keyframes slideBottom {
@@ -499,7 +507,6 @@ a {
   text-shadow: 0 0 40px #0070ef;
 }
 
-
 #message-form svg {
   height: 100%;
   width: 80%;
@@ -562,7 +569,6 @@ section p {
   height: 300px;
 }
 
-
 .contentwrapper {
   clear: both;
   padding: 0 2%;
@@ -574,34 +580,34 @@ section p {
   text-align: left;
 }
 
-
 :root {
   --trickyScale: 0.5;
 }
 
 .screen-image {
-  transform: perspective(3200px) rotateX(41.8deg) rotateY(48.5deg) rotateZ(-23.2deg) translateX(135px) translateY(190px) scale(1.348);
+  transform: perspective(3200px) rotateX(41.8deg) rotateY(48.5deg)
+    rotateZ(-23.2deg) translateX(135px) translateY(190px) scale(1.348);
   z-index: 2;
 }
-
 
 /* deactivate animation on iOS for z-sorting sorting problems */
 @supports not (-webkit-touch-callout: none) {
   /* CSS for other than iOS devices */
   .screen-image {
-      transition: transform 600ms ease-in-out, box-shadow 600ms ease-in-out;
-      transition-delay: 200ms;
+    transition: transform 600ms ease-in-out, box-shadow 600ms ease-in-out;
+    transition-delay: 200ms;
   }
 
   .screen-frame {
-      transition: opacity 600ms ease-in-out;
-      transition-delay: 200ms;
+    transition: opacity 600ms ease-in-out;
+    transition-delay: 200ms;
   }
 }
 
 /* you may want to change the position of the hovered image, it was optimized for my need (1280px centered virwport, flipped screen in right half of screen) */
 .screen-wrapper:hover .screen-image {
-  transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(560px) translateY(220px) scale(2.5);
+  transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0)
+    translateX(560px) translateY(220px) scale(2.5);
   cursor: pointer;
   box-shadow: 0 0 20px 20px rgb(255, 255, 255);
 }
@@ -610,7 +616,8 @@ section p {
   opacity: 0;
 }
 
-.screen-wrapper img, .screen-wrapper video {
+.screen-wrapper img,
+.screen-wrapper video {
   position: absolute;
   top: 0;
   left: 0;
@@ -625,36 +632,37 @@ section p {
 /* all media queries are made for my need, you may want to change them */
 @media screen and (max-width: 1380px) {
   .screen-wrapper {
-      min-height: 50vw;
+    min-height: 50vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .screen-wrapper {
-      min-height: 85vw;
+    min-height: 85vw;
   }
 }
 
 @media screen and (min-width: 1381px) {
   .screen-wrapper {
-      min-height: 670px;
+    min-height: 670px;
   }
 }
-
 
 @media (min-width: 769px) {
   /* start flipped screens (no flipping on small screens)  */
   .screen-wrapper.flip .screen-image {
-      transform: perspective(3100px) rotateX(44.2deg) rotateY(-51.0deg) rotateZ(26.4deg) translateX(292px) translateY(246px) scale(1.165);
+    transform: perspective(3100px) rotateX(44.2deg) rotateY(-51deg)
+      rotateZ(26.4deg) translateX(292px) translateY(246px) scale(1.165);
   }
 
   .screen-wrapper.flip:hover .screen-image {
-      transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(-340px) translateY(220px) scale(2.5);
-      cursor: pointer;
+    transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0)
+      translateX(-340px) translateY(220px) scale(2.5);
+    cursor: pointer;
   }
 
   .screen-wrapper.flip .screen-frame {
-      transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 
   /* end flipped screens  */
@@ -662,12 +670,13 @@ section p {
 
 @media (max-width: 768px) {
   .screen-wrapper:hover .screen-image {
-      transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0) translateX(15.5%) translateY(220px) scale(1.53) !important;
+    transform: perspective(2000px) rotateX(0) rotateY(0) rotateZ(0)
+      translateX(15.5%) translateY(220px) scale(1.53) !important;
   }
 
   /* centered */
   .screen-wrapper {
-      left: 50%;
-      margin-left: -40vw;
+    left: 50%;
+    margin-left: -40vw;
   }
 }

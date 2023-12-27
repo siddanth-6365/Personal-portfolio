@@ -1,14 +1,13 @@
 import React from "react";
 import "flowbite";
-import { useState, useEffect } from "react";
 
-const Header = ({ref}) => {
+const Header = ({ ref }) => {
+  const resumeLink =
+    "https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true";
 
- 
   return (
     <>
-    
-      <div id="navbar" className=" p-4 m-2 "  >
+      <div id="navbar" className=" p-4 m-2 ">
         <div className=" backdrop-blur-3xl text-black shadow-lg flex flex-wrap items-center justify-between">
           <div>
             <a href="#" className="flex items-center">
@@ -32,12 +31,7 @@ const Header = ({ref}) => {
             >
               <span class="front">
                 {" "}
-                <a
-                  href="https://drive.google.com/file/d/1pIX6SIOPW0tyInc-xb3iK56_X_WDo8SC/view"
-                >
-                  {" "}
-                  Resume{" "}
-                </a>{" "}
+                <a href={resumeLink}> Resume </a>{" "}
               </span>
             </button>
             <button
@@ -64,10 +58,7 @@ const Header = ({ref}) => {
             </button>
           </div>
 
-          <div
-            className=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-           
-          >
+          <div className=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border  border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
               <li>
                 <a
@@ -106,7 +97,6 @@ const Header = ({ref}) => {
           </div>
         </div>
       </div>
-      
     </>
   );
 };
