@@ -32,19 +32,19 @@ export const ProjectTimeline = () => {
   const items2 = [
     <img
       alt=""
-      src={require("./assets/p2img1.png")}
+      src={require("./assets/jp-1.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
     <img
       alt=""
-      src={require("./assets/p2img2.png")}
+      src={require("./assets/jp-2.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
     <img
       alt=""
-      src={require("./assets/p2img4.png")}
+      src={require("./assets/jp-3.png")}
       onDragStart={handleDragStart}
       role="presentation"
     />,
@@ -81,14 +81,14 @@ export const ProjectTimeline = () => {
   ];
 
   const stack1 = ["React", "Tailwind CSS", "Firebase"];
-  const stack2 = ["React", "NodeJS", "Tailwind CSS", "MongoDB"];
+  const stack2 = ["C++", "data structures", "Algorithms"];
   const stack3 = ["MySql", "NodeJs", "ExpressJs", "REST Api's"];
   const stack4 = ["React", "NodeJS", "Tailwind CSS", "MongoDB"];
 
   const desc1 =
     "This website was built with React JS framework, styled using Tailwind CSS, and Firebase for authentication using email and password. Currently, I am actively working on the project and constantly improving it to enhance its functionality.";
   const desc2 =
-    "I created Csv_to_Invoice, a website allows shopkeepers to easily upload CSV files containing order details and view a comprehensive list of all orders on a user-friendly dashboard. The website was built using MERN stack along with npm packages like multer for file uploading,cors,and axios.This is just an basic version, lot more to develop it in the future.";
+    "I created Jaypee Maps, a campus navigation system utilizing graph data structures and algorithms to optimize movement within College.The system calculates shortest paths based on user-selected locations and transportation modes, streamlining navigation with features like location selection and travel time estimation. This project showcased my skills in applying data structures and algorithms to solve real-world problems";
   const desc4 =
     "I am still developing WeekUp using the MERN stack. This application allows users to add modules and tasks under each week.i am working on more features like authentication and share link so that new user can add their own data. This is beta version only.";
   const desc3 =
@@ -99,8 +99,8 @@ export const ProjectTimeline = () => {
     "https://github.com/siddanth-6365/netflix_clone_basic",
   ];
   const projectlink2 = [
-    "https://34jqzd-3000.csb.app/",
-    "https://github.com/siddanth-6365/csv_to_invoice",
+    "https://github.com/siddanth-6365/Jaypee-Maps",
+    "https://github.com/siddanth-6365/Jaypee-Maps",
   ];
   const projectlink3 = [
     "https://github.com/siddanth-6365/Flight-Booking-Backend",
@@ -110,7 +110,6 @@ export const ProjectTimeline = () => {
     "https://zzkv46-3000.csb.app/",
     "https://github.com/siddanth-6365/WeekUp",
   ];
-
 
   const iconsvg1 = [
     <svg
@@ -190,7 +189,7 @@ export const ProjectTimeline = () => {
           projectlinks={projectlink1}
           iconsvg={iconsvg1}
         />
-          <TimelineElement
+        <TimelineElement
           items={items3}
           title="Airline-Reservation"
           stackArray={stack3}
@@ -200,13 +199,13 @@ export const ProjectTimeline = () => {
         />
         <TimelineElement
           items={items2}
-          title="CSV_to_Invoice"
+          title="Jaypee Maps"
           stackArray={stack2}
           desc={desc2}
           projectlinks={projectlink2}
           iconsvg={iconsvg2}
         />
-      
+
         <TimelineElement
           items={items4}
           title="WeekUp"
