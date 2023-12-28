@@ -4,10 +4,11 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 /* Track */

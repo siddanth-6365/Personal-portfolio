@@ -5,6 +5,7 @@ import Skillslist from "./Skillslist";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { GithubCalender } from "./GithubCalender";
+import { HeadingCard } from "./Cards/HeadingCard";
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
@@ -41,88 +42,14 @@ const AboutSection = () => {
     <>
       <div>
         <motion.section class="aboutmesection" id="about-div" ref={ref}>
-          <div class="aboutmediv max-w-screen-xl px-4 py-8 mx-auto   lg:px-6 sm:py-16 lg:py-24">
-            <div class="max-w-2xl   mx-auto text-center">
-              <h1 class="text-5xl font-extrabold leading-tight tracking-tight   sm:text-4xl ">
-                <a className="underline-effect" href="#about">
-                  <span className="text-gray-300">About Me </span>
-                </a>
-              </h1>
-            </div>
-
-            <motion.div
-              class="grid grid-cols-1 mt-8 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
-              // ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={aboutmevariant}
-            >
-              <div class="space-y-3">
-                <lord-icon
-                  src="https://cdn.lordicon.com/gqqykmqo.json"
-                  trigger="loop"
-                  colors="outline:#121331,primary:#4030e8,secondary:#ad6836,tertiary:#4030e8,quaternary:#f3c3ba"
-                  stroke="60"
-                  scale="60"
-                  style={iconstyle}
-                ></lord-icon>
-
-                <h3 class="text-2xl text-white  font-bold leading-tight ">
-                  Student
-                </h3>
-                <p class="text-lg font-normal text-gray-400 ">
-                  A undergrate at JIIT Noida
-                </p>
-              </div>
-
-              <div class="space-y-3">
-                <lord-icon
-                  src="https://cdn.lordicon.com/dtgezzsi.json"
-                  trigger="loop"
-                  colors="outline:#121331,primary:#4030e8,secondary:#ad6836,tertiary:#4030e8,quaternary:#f3c3ba"
-                  stroke="60"
-                  scale="60"
-                  style={iconstyle}
-                ></lord-icon>
-
-                <h3 class="text-2xl text-white font-bold leading-tight  ">
-                  Web Developer
-                </h3>
-                <p class="text-lg font-normal text-gray-400 dark:text-gray-400">
-                  I have been actively learning web development for the past few
-                  months.
-                </p>
-              </div>
-
-              <div class="space-y-3">
-                <lord-icon
-                  src="https://cdn.lordicon.com/puvaffet.json"
-                  trigger="loop"
-                  colors="outline:#121331,primary:#4030e8,secondary:#ad6836,tertiary:#4030e8,quaternary:#f3c3ba"
-                  stroke="60"
-                  scale="60"
-                  style={iconstyle}
-                ></lord-icon>
-                <h3 class="text-2xl font-bold leading-tight text-white">
-                  Learner
-                </h3>
-                <p class="text-lg font-normal text-gray-400 dark:text-gray-400">
-                  As iam student I have been upskilling myself and exploring in
-                  new things
-                </p>
-              </div>
-            </motion.div>
-          </div>
-
           <motion.div
-            //  ref={ref}
             animate={controls}
             initial="hidden"
             variants={skillsvariant}
           >
             <Skillslist />
             <div className="flex flex-col justify-center items-center pb-6">
-            <GithubCalender />
+              <GithubCalender />
             </div>
           </motion.div>
         </motion.section>

@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "clsx": "^2.0.0",
     "emailjs": "^4.0.2",
     "emailjs-com": "^3.2.0",
     "flowbite": "^1.7.0",
@@ -27,6 +28,7 @@
     "react-three-fiber": "^6.0.13",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "tailwind-merge": "^2.2.0",
     "three": "^0.155.0",
     "web-vitals": "^2.1.4"
   },
