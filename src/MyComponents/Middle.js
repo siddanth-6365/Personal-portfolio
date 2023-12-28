@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import EarthCanvas from "./3dModels/Box";
-import { motion,useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const imagestyle = {
   height: "650px",
@@ -14,20 +14,16 @@ const modelVariant = {
   visible: { y: 0, opacity: 1, transition: { duration: 0.7 } },
   hidden: { opacity: 0, y: -100 }, // Move from above the screen
 };
-const paraVariant= {
+const paraVariant = {
   visible: { x: 0, opacity: 1, transition: { duration: 0.7 } },
   hidden: { opacity: 0, x: -100 }, // Move from above the screen
-
-}
-
-
+};
 
 const Middle = () => {
   const roleArray = ["Frontend", "Backend", "Full-Stack"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,11 +44,10 @@ const Middle = () => {
     setDisplayText(roleArray[currentRoleIndex].slice(0, currentLetterIndex));
   }, [currentLetterIndex, currentRoleIndex, roleArray]);
 
-  
   const controls = useAnimation();
 
   const [ref, inView] = useInView();
-  
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -60,39 +55,21 @@ const Middle = () => {
       controls.start("hidden");
     }
   }, [controls, inView]);
-  
 
   return (
     <>
-      <motion.section
-        class="middle grid w-screen    "
-        id="middle"
-       
-      >
+      <motion.section class="middle grid w-screen    " id="middle">
         <div className="middle-inside flex flex-col w-screen md:flex-row sm:flex-row">
-          <motion.div class="intro-div flex w-1/2 items-center p-5  justify-center"
-           ref={ref}
-           animate={controls}
-          initial="hidden"
-           variants={paraVariant}>
+          <motion.div
+            class="intro-div flex w-1/2 items-center p-5  justify-center"
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={paraVariant}
+          >
             <div class=" w-2/3 p-10 m-4    ">
               <div className=" flex flex-col justify-start items-center">
-                <motion.h1
-                  class="heading-span p-4  text-2xl font-bold mb-4 text-center hover:cursor-move"
-                  // drag
-                  // dragConstraints={{
-                  //   top: -50,
-                  //   left: -50,
-                  //   right: 50,
-                  //   bottom: 50,
-                  // }}
-                  // dragElastic={0.3}
-                  // whileHover={{
-                  //   scale:1.1,
-                  //   cursor:"move"
-                  // }}
-                 
-                >
+                <motion.h1 class="heading-span p-4  text-2xl font-bold mb-4 text-center hover:cursor-move">
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
 
@@ -114,7 +91,6 @@ const Middle = () => {
                 </div>
 
                 <motion.div
-              
                   class={
                     window.innerWidth > 900
                       ? "social-div mt-8"
@@ -196,11 +172,12 @@ const Middle = () => {
             </div>
           </motion.div>
 
-          <motion.div class="img-div-1 w-1/2 flex justify-center items-center sm:order-first"
-           ref={ref}
-           animate={controls}
-          initial="hidden"
-           variants={modelVariant}
+          <motion.div
+            class="img-div-1 w-1/2 flex justify-center items-center sm:order-first"
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={modelVariant}
           >
             <div
               class="model-earth "

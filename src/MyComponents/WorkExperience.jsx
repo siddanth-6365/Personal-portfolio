@@ -1,6 +1,7 @@
 import React from "react";
 import { Timeline } from "flowbite-react";
 import { HeadingCard } from "./Cards/HeadingCard";
+import { motion } from "framer-motion";
 
 const experienceObject = [
   {
@@ -25,7 +26,12 @@ export const WorkExperience = () => {
       <div className="text-center pb-4 pt-6" id="work-experience">
         <HeadingCard title={"Work Experience"} />
       </div>
-      <div className="flex justify-center items-center text-white pb-4">
+      <motion.div
+        className="flex justify-center items-center text-white pb-4"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4 }}
+      >
         <Timeline>
           {experienceObject.map((work, index) => (
             <Timeline.Item key={index}>
@@ -50,7 +56,7 @@ export const WorkExperience = () => {
             </Timeline.Item>
           ))}
         </Timeline>
-      </div>
+      </motion.div>
     </>
   );
 };
