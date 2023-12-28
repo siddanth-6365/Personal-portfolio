@@ -6,7 +6,7 @@ import React from "react";
 const Skillslist = () => {
   return (
     <>
-      <section className="">
+      {/* <section className="">
         <div class="skills-div max-w-2xl mx-auto text-center">
           <h1 class="text-4xl  font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl ">
             <a className="underline-effect" href="#">
@@ -16,7 +16,6 @@ const Skillslist = () => {
         </div>
         <br></br>
         <div class="skills-divlist flex flex-wrap justify-center space-x-4   mt-3 mb-6 items-center gap-4">
-
 
           <li>
             <i class="fa-brands fa-html5  " >
@@ -71,7 +70,10 @@ const Skillslist = () => {
 
         <br></br>
         <br></br>
-      </section>
+      </section> */}
+      <div className="text-white">
+        skills
+      </div>
     </>
   );
 };

@@ -4,6 +4,7 @@ import { defineElement } from "lord-icon-element";
 import Skillslist from "./Skillslist";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { GithubCalender } from "./GithubCalender";
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
@@ -120,6 +121,9 @@ const AboutSection = () => {
             variants={skillsvariant}
           >
             <Skillslist />
+            <div className="flex flex-col justify-center items-center pb-6">
+            <GithubCalender />
+            </div>
           </motion.div>
         </motion.section>
       </div>
