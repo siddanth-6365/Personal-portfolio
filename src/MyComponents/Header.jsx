@@ -3,7 +3,7 @@ import "flowbite";
 
 const Header = ({ ref }) => {
   const resumeLink =
-    "https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true";
+    "https://docs.google.com/document/d/1wKTQx_3vybskRTnWOy5luKddlYFbZsoH4N59MGElHOs/edit?usp=sharing";
 
   return (
     <>
@@ -75,6 +75,14 @@ const Header = ({ ref }) => {
                   className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:text-blue-700 md:p-0  "
                 >
                   About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#work-experience"
+                  className="block py-2 pl-3 pr-4 text-gray-400 rounded  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white "
+                >
+                Experience
                 </a>
               </li>
               <li>

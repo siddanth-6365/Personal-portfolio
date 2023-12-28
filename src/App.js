@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Middle />
       <Aboutme />
-      {/* <WorkExperience /> */}
+      <WorkExperience />
       <ProjectTimeline />
       <Form />
     </>
