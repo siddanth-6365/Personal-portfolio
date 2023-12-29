@@ -2,7 +2,7 @@ import { Button, Navbar } from "flowbite-react";
 
 const Header = () => {
   const resumeLink =
-    "https://docs.google.com/document/d/1wKTQx_3vybskRTnWOy5luKddlYFbZsoH4N59MGElHOs/edit?usp=sharing";
+    "https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true";
 
   return (
     <Navbar fluid rounded style={{ background: "unset" }}>
