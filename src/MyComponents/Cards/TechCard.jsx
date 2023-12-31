@@ -22,7 +22,8 @@ const TechCard = ({ title, tech }) => {
               item === "MongoDB" && "border",
               item === "Docker" && "border",
               item === "GIT" && "border",
-              item === "Svelte" && "border"
+              item === "Svelte" && "border",
+              item === "GraphQL" && "border"
             )}
           >
             {item}

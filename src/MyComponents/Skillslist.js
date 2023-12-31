@@ -33,11 +33,11 @@ const Skillslist = () => {
           <motion.div>
             <TechCard
               title="Backend"
-              tech={["Node Js", "Express Js", "ORMs", "ODMs"]}
+              tech={["Node Js", "Express Js", "ORMs", "GraphQL"]}
             />
           </motion.div>
           <motion.div>
-            <TechCard title="Database" tech={["MySql", "MongoDB"]} />
+            <TechCard title="Database" tech={["MySql", "MongoDB","PostgreSQL"]} />
           </motion.div>
           <motion.div>
             <TechCard title="Devops" tech={["Docker", "GIT"]} />
