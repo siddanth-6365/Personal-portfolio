@@ -39,7 +39,7 @@ export const ProjectSection = () => {
           <span className="text-gray-200">Projects </span>
         </a>
       </h3>
-      <div className="flex justify-center gap-4 mb-4">
+      <div className="flex flex-wrap justify-center gap-4 mb-4">
         {StackButtons.map((stack, i) => (
           <Button
             key={i}

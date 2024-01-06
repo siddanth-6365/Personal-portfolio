@@ -20,11 +20,13 @@ const paraVariant = {
   hidden: { opacity: 0, x: -100 }, // Move from above the screen
 };
 
-const Middle = () => {
+const HeroSection = () => {
   const roleArray = ["Frontend", "Backend", "Full-Stack"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
+  const resumeLink =
+    "https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,9 +61,9 @@ const Middle = () => {
 
   return (
     <>
-      <motion.section class="middle grid w-screen    " id="middle">
+      <motion.section class="middle grid w-screen" id="middle">
         <div className="middle-inside flex flex-col w-screen md:flex-row sm:flex-row">
-          <motion.div
+          <div
             class="intro-div flex w-1/2 items-center p-5  justify-center"
             ref={ref}
             animate={controls}
@@ -86,7 +88,7 @@ const Middle = () => {
                 <div class="hireme-btn mt-5">
                   <button class="pushable">
                     <span class="front">
-                      <a href="mailto:siddanthe.edu@gmail.com"> Hire Me</a>
+                      <a href={resumeLink}> Resume</a>
                     </span>
                   </button>
                 </div>
@@ -98,10 +100,12 @@ const Middle = () => {
                       : "social-div mt-2"
                   }
                 >
+                  {/* Social Buttons */}
                   <div class="down">
                     <a
                       href="https://twitter.com/Siddanth6365"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <button class="card1">
                         <svg
@@ -109,12 +113,37 @@ const Middle = () => {
                           width="30px"
                           height="30px"
                           viewBox="0 0 512 512"
+                          class="twitter"
                         >
                           <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                         </svg>
                       </button>{" "}
                     </a>
-                    <a href="https://github.com/siddanth-6365" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/siddanth-reddy/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button class="card4 pb-2 pl-3">
+                        <svg
+                          className=""
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          fill="currentColor"
+                          class="linkedin"
+                          viewBox="0 0 16 16"
+                        >
+                          {" "}
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />{" "}
+                        </svg>
+                      </button>
+                    </a>
+                    <a
+                      href="https://github.com/siddanth-6365"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <button class="card3">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -128,30 +157,11 @@ const Middle = () => {
                         </svg>
                       </button>{" "}
                     </a>
-                    <a
-                      href="https://www.linkedin.com/in/siddanth-reddy/"
-                      target="_blank"
-                    >
-                      <button class="card4 pb-2 pl-3">
-                        <svg
-                          className=""
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="30"
-                          height="28"
-                          fill="currentColor"
-                          class="linkedin"
-                          viewBox="0 0 16 16"
-                        >
-                          {" "}
-                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />{" "}
-                        </svg>
-                      </button>
-                    </a>
                   </div>
                 </motion.div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <motion.div
             class="img-div-1 w-1/2 flex justify-center items-center sm:order-first"
@@ -184,4 +194,4 @@ const Middle = () => {
   );
 };
 
-export default Middle;
+export default HeroSection;

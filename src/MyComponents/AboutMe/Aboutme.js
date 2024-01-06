@@ -5,20 +5,9 @@ import Skillslist from "./Skillslist";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { GithubCalender } from "./GithubCalender";
-import { HeadingCard } from "./Cards/HeadingCard";
 
 // define "lord-icon" custom element with default properties
 defineElement(lottie.loadAnimation);
-
-const iconstyle = {
-  width: "70px",
-  height: "80px",
-};
-
-const aboutmevariant = {
-  visible: { y: 0, opacity: 1, transition: { duration: 1.3 } },
-  hidden: { opacity: 0, y: -100 }, // Move from above the screen
-};
 
 const skillsvariant = {
   visible: { y: 20, opacity: 1, transition: { duration: 1.3 } },

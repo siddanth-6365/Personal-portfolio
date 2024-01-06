@@ -68,7 +68,6 @@ body {
     url("./MyComponents/assets/bgportfolio1.jpeg");
   /* background-size: 100%; */
   background-attachment: fixed;
-  scrollbar-color: red yellow;
 }
 
 code {
@@ -96,12 +95,7 @@ code {
 
 .intro-div {
   position: relative;
-  /* top: 10%; */
 }
-
-/* .img-div-1 {
-  animation: animate 5s ease-in-out infinite;
-} */
 
 .logo-name {
   font-family: monospace;
@@ -135,19 +129,11 @@ code {
 }
 
 .consistent-image {
-  width: 500px; 
+  width: 500px;
   height: 250px;
 }
 
-/* skillslist.js buttons css
-.skills-btn {
-  width: 100px;
-  height: 40px;
-  transition: width 0.3s, height 0.3s;
-} */
-
 /* If the browser window is 600px or smaller, */
-
 @media only screen and (max-width: 700px) {
   body {
     background-size: cover;
@@ -314,7 +300,6 @@ code {
 }
 
 /* Social icon css */
-
 .social-div {
   display: flex;
   flex-direction: column;
@@ -341,15 +326,13 @@ code {
   transition: 0.2s ease-in-out;
 }
 
-.instagram {
-  margin-left: 13px;
-  fill: white;
-}
-
 .card3 {
   width: 60px;
   height: 60px;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -357,42 +340,37 @@ code {
   fill: white;
 }
 
-.github {
-  margin-left: 13px;
-}
-
 .card4 {
   width: 60px;
   height: 60px;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #0070ef;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: 0.2s ease-in-out;
 }
 
+.twitter {
+  fill: white;
+}
+
 .linkedin {
-  margin-top: 1px;
+  margin-top: 3px;
+  margin-right: 5px;
   fill: #0070ef;
 }
 
 .card1:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #cc39a4;
+  fill: black;
+  background-color: white;
 }
 
-.card1:hover .instagram {
-  fill: white;
-}
-
-.card2:hover {
-  cursor: pointer;
-  scale: 1.1;
-  background-color: #03a9f4;
-}
-
-.card2:hover .twitter {
+.card1:hover .twitter {
   fill: black;
 }
 
@@ -415,19 +393,6 @@ code {
 
 .card4:hover .linkedin {
   fill: black;
-}
-
-/**/
-
-.project-content {
-  position: relative;
-  bottom: 200px;
-}
-
-.project-content-2 {
-  position: relative;
-  bottom: 500px;
-  left: 100px;
 }
 
 @keyframes gradient-animation {
@@ -536,10 +501,6 @@ a {
   }
 }
 
- {
-  /*project section css*/
-}
-
 section {
   text-align: center;
   padding: 20px;
@@ -552,42 +513,6 @@ section h2 {
 section p {
   margin-top: 0;
   color: white;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 910px;
-  margin: 20px auto 0;
-}
-
-.project-tile {
-  margin: 10px;
-  max-width: 340px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.project-tile:hover {
-  transform: scale(1.05);
-}
-
-.project-tile img {
-  width: 400px;
-  height: 300px;
-}
-
-.contentwrapper {
-  clear: both;
-  padding: 0 2%;
-  box-sizing: border-box;
-  width: 94%;
-  max-width: 1280px;
-  min-width: 300px;
-  margin: 0 auto;
-  text-align: left;
 }
 
 :root {

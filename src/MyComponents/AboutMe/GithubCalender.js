@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import { HeadingCard } from "./Cards/HeadingCard";
+import { HeadingCard } from "../Cards/HeadingCard";
 
 export const GithubCalender = () => {
   return (

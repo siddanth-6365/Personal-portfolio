@@ -1,9 +1,6 @@
 import { Button, Navbar } from "flowbite-react";
 
 const Header = () => {
-  const resumeLink =
-    "https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true";
-
   return (
     <Navbar fluid rounded style={{ background: "unset" }}>
       <Navbar.Brand href="#">
@@ -13,12 +10,12 @@ const Header = () => {
           alt="Bordered avatar"
         />
         <span className="logo-name self-center text-2xl md:text-xl font-semibold whitespace-nowrap text-blue-700 dark:text-white">
-          <span> &lt;</span> Siddanth Reddy <span>/&gt; </span>
+          <span> &lt;</span>Siddanth Reddy<span>/&gt; </span>
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button href={resumeLink} className="Resume-btn bg-blue-600">
-          Resume
+        <Button className="Resume-btn bg-blue-600">
+          <a href="mailto:siddanthe.edu@gmail.com"> Hire Me</a>
         </Button>
         <Navbar.Toggle />
       </div>

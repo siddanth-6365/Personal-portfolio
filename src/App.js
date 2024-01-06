@@ -1,22 +1,19 @@
-import Header from "./MyComponents/Header";
-import Middle from "./MyComponents/Middle";
-import Aboutme from "./MyComponents/Aboutme";
-import { WorkExperience } from "./MyComponents/WorkExperience";
-import {  ProjectSection } from "./MyComponents/project/index";
-// import { ProjectTimeline } from "./MyComponents/project/NewProject";
 import "./index.css";
+import Header from "./MyComponents/Header";
+import HeroSection from "./MyComponents/HeroSection";
+import Aboutme from "./MyComponents/AboutMe/Aboutme";
+import { WorkExperience } from "./MyComponents/WorkExperience/WorkExperience";
+import { ProjectSection } from "./MyComponents/project/index";
 import Form from "./MyComponents/Form";
 
 function App() {
-
   return (
     <>
       <Header />
-      <Middle />
+      <HeroSection />
       <Aboutme />
       <WorkExperience />
       <ProjectSection />
-      {/* <ProjectTimeline /> */}
       <Form />
     </>
   );

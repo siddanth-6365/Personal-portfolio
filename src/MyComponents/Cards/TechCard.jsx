@@ -15,7 +15,7 @@ const TechCard = ({ title, tech }) => {
               item === "Tailwind" && "border",
               item === "Javascript" && "border",
               item === "React Js" && "border",
-              item === "Next Js 13" && "border",
+              item === "Next Js" && "border",
               item === "Node Js" && "border",
               item === "Express Js" && "border",
               item === "MySql" && "border",

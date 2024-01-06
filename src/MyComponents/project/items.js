@@ -86,6 +86,30 @@ export const backendItems = [
       "https://github.com/siddanth-6365/Flight-Booking-Backend",
     ],
   },
+  {
+    title: "threads-apps-backend",
+    images: [
+      <img
+        className="consistent-image"
+        alt=""
+        src={require("../assets/bp22.png")}
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    ],
+    stack: [
+      "GraphQL",
+      "Typescript",
+      "Prisma",
+      "ExpressJS",
+      "Docker-PostgreSQL",
+    ],
+    desc: "A robust backend API clone of the Threads app by Facebook, built with GraphQL and a modern tech stack Seamlessly handles user authentication, thread creation, media management, and interactions. Designed with a focus on scalability, maintainability, and developer experience",
+    projectlinks: [
+      "https://github.com/siddanth-6365/Threads-app-backend-graphql",
+      "https://github.com/siddanth-6365/Threads-app-backend-graphql",
+    ],
+  },
 ];
 
 export const CppItems = [
@@ -123,4 +147,9 @@ export const CppItems = [
   },
 ];
 
-export const TopItems = [backendItems[0], frontendItems[0], CppItems[0]];
+export const TopItems = [
+  backendItems[0],
+  backendItems[1],
+  frontendItems[0],
+  CppItems[0],
+];

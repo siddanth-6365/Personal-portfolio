@@ -1,6 +1,6 @@
 import React from "react";
-import TechCard from "./Cards/TechCard";
-import { HeadingCard } from "./Cards/HeadingCard";
+import TechCard from "../Cards/TechCard";
+import { HeadingCard } from "../Cards/HeadingCard";
 import { motion } from "framer-motion";
 
 const Skillslist = () => {
