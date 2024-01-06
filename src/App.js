@@ -2,7 +2,8 @@ import Header from "./MyComponents/Header";
 import Middle from "./MyComponents/Middle";
 import Aboutme from "./MyComponents/Aboutme";
 import { WorkExperience } from "./MyComponents/WorkExperience";
-import { ProjectTimeline } from "./MyComponents/NewProject";
+import {  ProjectSection } from "./MyComponents/project/index";
+// import { ProjectTimeline } from "./MyComponents/project/NewProject";
 import "./index.css";
 import Form from "./MyComponents/Form";
 
@@ -14,7 +15,8 @@ function App() {
       <Middle />
       <Aboutme />
       <WorkExperience />
-      <ProjectTimeline />
+      <ProjectSection />
+      {/* <ProjectTimeline /> */}
       <Form />
     </>
   );

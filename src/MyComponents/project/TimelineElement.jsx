@@ -1,10 +1,7 @@
-import {
-  
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import "../index.css"
+import "../../index.css";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -17,20 +14,16 @@ export const TimelineElement = ({
   title,
   stackArray,
   projectlinks,
-  iconsvg
 }) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: " rgba(120, 120, 120, 0.5)",color:"white" }}
+      contentStyle={{ background: " rgba(120, 120, 120, 0.5)", color: "white" }}
       contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
       date={title}
       iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-      icon={iconsvg
-    
-      }
     >
-      <a href={projectlinks[0]} target="_blank">
+      <a href={projectlinks[0]} target="_blank" rel="noreferrer">
         <AliceCarousel
           mouseTracking
           items={items}
@@ -43,7 +36,7 @@ export const TimelineElement = ({
       </a>
 
       <div className="mt-4  flex gap-2">
-        <a href={projectlinks[0]} target="_blank">
+        <a href={projectlinks[0]} target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -61,6 +54,7 @@ export const TimelineElement = ({
         </a>
         <a
           href={projectlinks[1]}
+          rel="noreferrer"
           aria-label="Homepage"
           class="footer-octicon"
           title="GitHub"
@@ -86,7 +80,10 @@ export const TimelineElement = ({
       <div className="flex flex-wrap gap-4 mt-4  font-medium">
         {stackArray.map((s) => {
           return (
-            <button className="p-2 text-sm font-medium bg-gray-300   rounded-full " style={{color:"black"}}>
+            <button
+              className="p-2 text-sm font-medium bg-gray-300   rounded-full "
+              style={{ color: "black" }}
+            >
               {s}
             </button>
           );
