@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import { Button } from "flowbite-react";
 import { ProjectTimeline } from "./ProjectTimeline";
-import { frontendItems, fullStackItems, backendItems, CppItems } from "./items";
+import {
+  frontendItems,
+  fullStackItems,
+  backendItems,
+  CppItems,
+  TopItems,
+} from "./items";
 
 export const ProjectSection = () => {
-  const StackButtons = ["full-stack", "frontend", "Backend", "C++"];
-  const [selectedStack, setSelectedStack] = useState("full-stack");
+  const StackButtons = ["Top", "Full-stack", "Frontend", "Backend", "C++"];
+  const [selectedStack, setSelectedStack] = useState("Top");
 
   const getSelectedItems = () => {
     switch (selectedStack) {
-      case "frontend":
+      case "Top":
+        return TopItems;
+      case "Frontend":
         return frontendItems;
-      case "full-stack":
+      case "Full-stack":
         return fullStackItems;
       case "Backend":
         return backendItems;
@@ -38,7 +46,6 @@ export const ProjectSection = () => {
             onClick={() => setSelectedStack(stack)}
             style={{
               backgroundColor: selectedStack === stack ? "blue" : "",
-              // Add other styles as needed
             }}
           >
             {stack}

@@ -134,6 +134,11 @@ code {
   transform: translateY(-2px);
 }
 
+.consistent-image {
+  width: 500px; 
+  height: 250px;
+}
+
 /* skillslist.js buttons css
 .skills-btn {
   width: 100px;

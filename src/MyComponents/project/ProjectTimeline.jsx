@@ -13,7 +13,7 @@ export const ProjectTimeline = ({ items }) => {
           <TimelineElement
             key={index}
             items={item.images}
-            title="Netflix-clone"
+            title={item.title}
             stackArray={item.stack}
             desc={item.desc}
             projectlinks={item.projectlinks}
