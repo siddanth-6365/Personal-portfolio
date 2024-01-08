@@ -70,22 +70,22 @@ const HeroSection = () => {
             initial="hidden"
             variants={paraVariant}
           >
-            <div class=" w-2/3 p-10 m-4    ">
-              <div className=" flex flex-col justify-start items-center">
-                <motion.h1 class="heading-span p-4  text-2xl font-bold mb-4 text-center hover:cursor-move">
+            <div class=" w-2/3 p-10 m-4">
+              <div className=" flex flex-col justify-start items-center gap-6">
+                <motion.h1 class="heading-span p-4  text-2xl font-bold  text-center hover:cursor-move">
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
 
-                <h2 class=" text-xl font-bold mb-4 text-center">
+                <h2 class=" text-xl font-bold  text-center">
                   <span class="nameclass-2  ">
                     {"<An "} {displayText} {" Developer/>"}
                   </span>
                 </h2>
-                <p class="text-lg italic max-w-[500px] font-mono text-blue-500 mb-6 text-center mt-3">
+                <p class="desc-para text-lg italic max-w-[500px] font-mono text-blue-500  text-center ">
                   "I have been learning and developing my skills in web
                   development for the past few months"
                 </p>
-                <div class="hireme-btn mt-5">
+                <div class="hireme-btn">
                   <button class="pushable">
                     <span class="front">
                       <a href={resumeLink}> Resume</a>
@@ -96,8 +96,8 @@ const HeroSection = () => {
                 <motion.div
                   class={
                     window.innerWidth > 900
-                      ? "social-div mt-8"
-                      : "social-div mt-2"
+                      ? "social-div"
+                      : "social-div"
                   }
                 >
                   {/* Social Buttons */}

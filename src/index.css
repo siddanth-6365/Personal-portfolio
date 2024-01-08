@@ -133,15 +133,41 @@ code {
   height: 250px;
 }
 
-/* If the browser window is 600px or smaller, */
+.scroll-downs {
+  margin: auto;
+  margin-top: -5%;
+  width: 34px;
+  height: 50px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+/*MOBILE VIEW - If the browser window is 600px or smaller, */
 @media only screen and (max-width: 700px) {
   body {
     background-size: cover;
     background-attachment: fixed;
   }
-  .Resume-btn {
+  /* .Resume-btn {
     display: none;
-  }
+  } */
 
   .nameclass {
     font-size: xx-large;
@@ -209,17 +235,28 @@ code {
   }
 
   .middle {
-    height: 100vh;
+    height: 100dvh;
     display: inline;
+  }
+
+  .desc-para {
+    /* display: none; */
+  }
+
+  .hireme-btn {
+    /* display: none; */
+    /* margin-bottom: 5%; */
+
   }
 
   .middle-inside {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5%;
   }
   .intro-div {
     position: relative;
-    top: -30px;
+    /* top: -30px; */
     width: 100%;
   }
   .img-div-1 {
@@ -247,19 +284,18 @@ code {
     margin-left: 4%;
   }
   .social-div .linkedin {
-    margin-left: -10px;
-    margin-top: 2px;
+    margin-left: -8px;
+    margin-top: 5px;
   }
 
   .scroll-downs {
     /* display: none; */
+  /* margin-top: 0; */
     position: relative;
     width: 20px;
     height: 20px;
   }
-  .hireme-btn {
-    display: none;
-  }
+ 
 
   #message-form svg {
     height: 100%;
@@ -407,31 +443,7 @@ code {
   }
 }
 
-.scroll-downs {
-  margin: auto;
-  margin-top: -5%;
-  width: 34px;
-  height: 50px;
-}
-.mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-  animation-iteration-count: infinite;
-}
+
 @keyframes scroll {
   0% {
     opacity: 0;
