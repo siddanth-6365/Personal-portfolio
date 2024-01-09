@@ -21,7 +21,7 @@ const paraVariant = {
 };
 
 const HeroSection = () => {
-  const roleArray = ["Frontend", "Backend", "Full-Stack"];
+  const roleArray = ["Frontend", "Backend", "FullStack"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -71,7 +71,7 @@ const HeroSection = () => {
             variants={paraVariant}
           >
             <div class=" w-2/3 p-10 m-4">
-              <div className=" flex flex-col justify-start items-center gap-6">
+              <div className=" flex flex-col justify-start items-center gap-4">
                 <motion.h1 class="heading-span p-4  text-2xl font-bold  text-center hover:cursor-move">
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
