@@ -71,7 +71,7 @@ const HeroSection = () => {
             variants={paraVariant}
           >
             <div class=" w-2/3 p-10 m-4">
-              <div className=" flex flex-col justify-start items-center gap-6">
+              <div className=" flex flex-col justify-start items-center gap-4">
                 <motion.h1 class="heading-span p-4  text-2xl font-bold  text-center hover:cursor-move">
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
@@ -82,8 +82,11 @@ const HeroSection = () => {
                   </span>
                 </h2>
                 <p class="desc-para text-lg  max-w-[500px] font-mono text-blue-500  text-center ">
-                  "A Full Stack Developer with a passion for crafting user
-                  interfaces and visually stunning digital experiences"
+                "With a strong foundation in full stack
+                  development, I specialize in creating responsive web pages and
+                  apps, designing UI, adding interactivity, building
+                  robust APIs, and tackling advanced topics"
+                 
                 </p>
                 <div class="hireme-btn">
                   <button class="pushable">
