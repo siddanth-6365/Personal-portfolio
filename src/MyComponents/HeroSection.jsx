@@ -64,14 +64,14 @@ const HeroSection = () => {
       <motion.section class="middle grid w-screen" id="middle">
         <div className="middle-inside flex flex-col w-screen md:flex-row sm:flex-row">
           <div
-            class="intro-div flex w-1/2 items-center p-5  justify-center"
+            class="intro-div flex w-1/2 items-center p-4 justify-center"
             ref={ref}
             animate={controls}
             initial="hidden"
             variants={paraVariant}
           >
             <div class=" w-2/3 p-10 m-4">
-              <div className=" flex flex-col justify-start items-center gap-4">
+              <div className=" flex flex-col justify-start items-center gap-6">
                 <motion.h1 class="heading-span p-4  text-2xl font-bold  text-center hover:cursor-move">
                   <span class="nameclass  ">{" HEY, I'M Siddanth"} </span>
                 </motion.h1>
@@ -81,9 +81,9 @@ const HeroSection = () => {
                     {"<An "} {displayText} {" Developer/>"}
                   </span>
                 </h2>
-                <p class="desc-para text-lg italic max-w-[500px] font-mono text-blue-500  text-center ">
-                  "I have been learning and developing my skills in web
-                  development for the past few months"
+                <p class="desc-para text-lg  max-w-[500px] font-mono text-blue-500  text-center ">
+                  "A Full Stack Developer with a passion for crafting user
+                  interfaces and visually stunning digital experiences"
                 </p>
                 <div class="hireme-btn">
                   <button class="pushable">
@@ -94,11 +94,7 @@ const HeroSection = () => {
                 </div>
 
                 <motion.div
-                  class={
-                    window.innerWidth > 900
-                      ? "social-div"
-                      : "social-div"
-                  }
+                  class={window.innerWidth > 900 ? "social-div" : "social-div"}
                 >
                   {/* Social Buttons */}
                   <div class="down">

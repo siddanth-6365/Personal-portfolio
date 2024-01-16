@@ -34,6 +34,31 @@ export const frontendItems = [
 
 export const fullStackItems = [
   {
+    title: "leetcode-stats-api",
+    images: [
+      <img
+        className="consistent-image"
+        alt=""
+        src={require("../assets/leetcode-pimg1.png")}
+        onDragStart={handleDragStart}
+        role="presentation"
+      />,
+      <img
+        className="consistent-image"
+        alt=""
+        src={require("../assets/leetcode-pimg2.png")}
+        onDragStart={handleDragStart}
+        role="presentation"
+      />,
+    ],
+    stack: ["GraphQL", "NodeJS", "Nextra-Nextjs"],
+    desc: "his project aims to enhance the accessibility and ease of integration for developers using LeetCode data by converting the existing LeetCode API, which is based on GraphQL, into a RESTful API. The primary goal is to provide a straightforward way for developers to retrieve valuable statistics and information about LeetCode users and their problem-solving activities.",
+    projectlinks: [
+      "https://leetcode-restful-api.vercel.app/",
+      "https://github.com/siddanth-6365/leetcode-Stats-api",
+    ],
+  },
+  {
     title: "Week-up",
     images: [
       <img
@@ -52,7 +77,7 @@ export const fullStackItems = [
       />,
     ],
     stack: ["React", "NodeJS", "Tailwind CSS", "MongoDB"],
-    desc: "I am still developing WeekUp using the MERN stack. This application allows users to add modules and tasks under each week.i am working on more features like authentication and share link so that new user can add their own data. This is beta version only.",
+    desc: "WeekUp using the MERN stack. This application allows users to add modules and tasks under each week.i am working on more features like authentication and share link so that new user can add their own data. This is beta version only.",
     projectlinks: [
       "https://zzkv46-3000.csb.app/",
       "https://github.com/siddanth-6365/WeekUp",
@@ -65,16 +90,16 @@ export const backendItems = [
     title: "Flight-Booking",
     images: [
       <img
-        className="consistent-image"
         alt=""
-        src={require("../assets/p4img1.png")}
+        className="consistent-image"
+        src={require("../assets/bp-1.webp")}
         onDragStart={handleDragStart}
         role="presentation"
       />,
       <img
-        alt=""
         className="consistent-image"
-        src={require("../assets/p4img2.png")}
+        alt=""
+        src={require("../assets/p4img1.png")}
         onDragStart={handleDragStart}
         role="presentation"
       />,
@@ -95,7 +120,7 @@ export const backendItems = [
         src={require("../assets/bp22.png")}
         onDragStart={handleDragStart}
         role="presentation"
-      />
+      />,
     ],
     stack: [
       "GraphQL",
@@ -149,6 +174,7 @@ export const CppItems = [
 
 export const TopItems = [
   backendItems[0],
+  fullStackItems[0],
   backendItems[1],
   frontendItems[0],
   CppItems[0],
